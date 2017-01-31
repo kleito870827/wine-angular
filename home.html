@@ -1,0 +1,8 @@
+<div>
+  Search:<input ng-model="query" type="text"/>
+  <table style="border: 1px solid grey">
+    <tr ng-repeat="wine in wines | filter:query">
+      <td style="border: 1px solid grey"><a href="#{{wine.wine_id}}">{{wine.name}}</a></td>
+    </tr>
+  </table>
+</div>
